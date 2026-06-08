@@ -1,75 +1,419 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hyderabad Resale Properties</title>
+
+<title>700 Sq Yards HMDA Plot for Sale | Karvy Nova Maheshwaram</title>
+
+<meta name="description" content="Premium HMDA Approved Corner Plot for Sale in Karvy Nova, Maheshwaram. 700 Sq Yards, South West Facing, 40 ft & 90 ft Roads.">
+
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;color:#222}
-header{background:#0b5ed7;color:white;padding:25px;text-align:center}
-.container{max-width:1100px;margin:auto;padding:20px}
-.card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.hero{display:grid;grid-template-columns:1fr;gap:20px}
-img{max-width:100%;border-radius:10px}
-.price{font-size:28px;font-weight:bold;color:#0b5ed7}
-.btn{display:inline-block;padding:12px 18px;background:#198754;color:white;text-decoration:none;border-radius:6px;margin:5px}
-.btn2{background:#0b5ed7}
-ul li{margin:8px 0}
-footer{text-align:center;padding:20px}
-.note{background:#fff3cd;padding:12px;border-radius:8px;margin-top:20px}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f9fa;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.55)),
+url('karvy-nova.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.price{
+font-size:36px;
+font-weight:bold;
+color:#ffd700;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 24px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:8px;
+}
+
+.btn-whatsapp{
+background:#25D366;
+color:white;
+}
+
+.btn-call{
+background:#2563eb;
+color:white;
+}
+
+section{
+padding:70px 5%;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin-bottom:40px;
+color:#0f172a;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.description{
+max-width:1000px;
+margin:auto;
+font-size:18px;
+}
+
+.location-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.form-container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+input, textarea{
+width:100%;
+padding:14px;
+margin-top:10px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#0f172a;
+color:white;
+padding:14px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.floating-whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.price{
+font-size:28px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>Hyderabad Resale Properties</h1>
-<p>Verified Property Listings | Contact: +91 7848847702</p>
+
+<div class="logo">
+Hyderabad Resale Properties
+</div>
+
+<nav>
+<a href="#gallery">Gallery</a>
+<a href="#location">Location</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
-<div class="container">
-<div class="card hero">
-<h2>HMDA Corner Plot for Sale in Maheshwaram</h2>
+<section class="hero">
 
-<p class="price">₹17,000 per Sq. Yard</p>
+<div class="hero-content">
 
-<p><strong>Location:</strong> Ameerpet Village, Maheshwaram Mandal</p>
-
-<h3>Property Highlights</h3>
-<ul>
-<li>Venture Name: Karvy Nova</li>
-<li>HMDA Approved Plot</li>
-<li>Plot Size: 700 Sq. Yards</li>
-<li>Dimensions: 90 ft × 70 ft</li>
-<li>Corner Plot</li>
-<li>South-West Facing</li>
-<li>40 ft Road on South Side</li>
-<li>90 ft Road on West Side</li>
-</ul>
-
-<h3>Description</h3>
-<p>
-Excellent opportunity to own a premium HMDA-approved corner plot in the well-planned Karvy Nova venture at Ameerpet Village, Maheshwaram Mandal. Spanning 700 square yards with dual-road access, this South-West facing plot offers outstanding visibility, easy accessibility, and strong appreciation potential. Its strategic location near Hyderabad's expanding growth corridor makes it suitable for luxury residential development, investment, or future commercial potential. Wide roads on two sides enhance convenience and add long-term value to the property.
-</p>
+<h1>
+HMDA Approved Corner Plot
+</h1>
 
 <p>
-<a class="btn" href="https://wa.me/917848847702">WhatsApp Now</a>
-<a class="btn btn2" href="tel:+917848847702">Call Now</a>
-<a class="btn btn2" href="https://maps.app.goo.gl/zho1ipRRq3spBKLt8">View Location</a>
+Karvy Nova | Ameerpet Village | Maheshwaram
 </p>
 
-<div class="note">
-<h3>Add More Properties Later</h3>
-<p>Create a new card section for each property or duplicate this page and update the details. This site is designed to be expanded easily as your inventory grows.</p>
+<div class="price">
+₹17,000 Per Sq Yard
 </div>
+
+<p>
+700 Sq Yards • South-West Facing • 40 Ft & 90 Ft Roads
+</p>
+
+<a href="https://wa.me/917848847702"
+class="btn btn-whatsapp">
+WhatsApp Now
+</a>
+
+<a href="tel:+917848847702"
+class="btn btn-call">
+Call Now
+</a>
+
 </div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Property Highlights
+</h2>
+
+<div class="features">
+
+<div class="feature">HMDA Approved Venture</div>
+<div class="feature">700 Sq Yards Plot</div>
+<div class="feature">Corner Plot</div>
+<div class="feature">South-West Facing</div>
+<div class="feature">40 Ft South Road</div>
+<div class="feature">90 Ft West Road</div>
+<div class="feature">Karvy Nova Venture</div>
+<div class="feature">Excellent Investment Potential</div>
+
 </div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">
+Property Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="karvy-nova.jpg" alt="">
+<img src="karvy-nova.jpg" alt="">
+<img src="karvy-nova.jpg" alt="">
+<img src="karvy-nova.jpg" alt="">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Property Description
+</h2>
+
+<div class="description">
+
+<p>
+
+Premium HMDA approved corner plot located in the prestigious Karvy Nova venture at Ameerpet Village, Maheshwaram Mandal.
+
+This 700 square yard South-West facing plot enjoys dual road access with a 40-foot road on the South side and a 90-foot road on the West side.
+
+The plot offers excellent accessibility, visibility, and long-term appreciation potential.
+
+Ideal for luxury villa construction, investment, or future development in one of Hyderabad's rapidly growing corridors.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="location">
+
+<h2 class="section-title">
+Location
+</h2>
+
+<div class="location-box">
+
+<p>
+Ameerpet Village, Maheshwaram Mandal
+</p>
+
+<br>
+
+<a class="btn btn-call"
+href="https://maps.app.goo.gl/zho1ipRRq3spBKLt8">
+
+View On Google Maps
+
+</a>
+
+<br><br>
+
+<a class="btn btn-whatsapp"
+href="POS-Layout.pdf">
+
+Download Layout PDF
+
+</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">
+Book a Site Visit
+</h2>
+
+<div class="form-container">
+
+<form>
+
+<input type="text"
+placeholder="Your Name">
+
+<input type="tel"
+placeholder="Mobile Number">
+
+<textarea rows="5"
+placeholder="Message"></textarea>
+
+<button type="submit">
+Request Site Visit
+</button>
+
+</form>
+
+</div>
+
+</section>
 
 <footer>
-© 2026 Hyderabad Resale Properties
+
+<h3>Pankaj Agarwal</h3>
+
+<p>
+Mobile: +91 7848847702
+</p>
+
+<p>
+WhatsApp Available
+</p>
+
 </footer>
+
+<a class="floating-whatsapp"
+href="https://wa.me/917848847702">
+
+WhatsApp
+
+</a>
+
 </body>
 </html>
-
-
