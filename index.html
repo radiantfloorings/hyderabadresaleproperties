@@ -68,7 +68,7 @@ section{padding:60px 20px}
 
 .quickfacts{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(2,1fr);
 gap:15px;
 }
 .card{
@@ -162,9 +162,23 @@ color:#fff;
 .sticky-wa{background:#25D366}
 
 @media(max-width:768px){
-.hero h1{font-size:2rem}
-.price{font-size:1.7rem}
-h2{font-size:1.6rem}
+
+.hero h1{
+font-size:2rem;
+}
+
+.price{
+font-size:1.7rem;
+}
+
+h2{
+font-size:1.6rem;
+}
+
+.quickfacts{
+grid-template-columns:repeat(2,1fr);
+}
+
 }
 </style>
 </head>
@@ -172,10 +186,18 @@ h2{font-size:1.6rem}
 
 <section class="hero">
 <div class="hero-content">
-<div class="badge">🔥 HMDA APPROVED CORNER PLOT</div>
+<div class="badge">
+🔥 ONLY 1 CORNER PLOT AVAILABLE
+</div>
 <h1>700 Sq Yards Plot in Karvy Nova</h1>
 <p>Maheshwaram • Ameerpet Village</p>
-<div class="price">₹17,000 Per Sq Yard</div>
+<div class="price">
+₹17,000 Per Sq Yard
+</div>
+
+<div style="font-size:24px;font-weight:bold;color:#ffffff;margin-top:10px;">
+Approx Plot Value ₹1.19 Crore
+</div>
 <p>South-West Facing • 40 Ft South Road • 90 Ft West Road</p>
 
 <div class="cta">
@@ -249,9 +271,27 @@ Premium 700 Sq Yard HMDA approved corner plot in Karvy Nova, Maheshwaram. South-
 <div class="container">
 <h2>Location</h2>
 <div class="location-box">
-<p><strong>Ameerpet Village, Maheshwaram Mandal</strong></p><br>
-<a class="btn call" href="https://maps.app.goo.gl/zho1ipRRq3spBKLt8">View Location</a>
-<a class="btn whatsapp" href="POS-Layout.pdf">Download Layout PDF</a>
+
+<p>
+<strong>Ameerpet Village, Maheshwaram Mandal</strong>
+</p>
+
+<br>
+
+<div style="display:flex;flex-direction:column;gap:15px;max-width:300px;margin:auto;">
+
+<a class="btn call"
+href="https://maps.app.goo.gl/zho1ipRRq3spBKLt8">
+📍 View Location
+</a>
+
+<a class="btn whatsapp"
+href="POS-Layout.pdf">
+📄 Download Layout PDF
+</a>
+
+</div>
+
 </div>
 </div>
 </section>
